@@ -1,0 +1,64 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Test_task_1"
+        xmlns:Properties="clr-namespace:Test_task_1.Properties" x:Class="Test_task_1.MainWindow"
+        mc:Ignorable="d"
+        Title="Арифметические операции столбиком" Height="450" Width="800" ResizeMode="NoResize">
+    <Window.Background>
+        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
+    </Window.Background>
+    <Grid ShowGridLines="False" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="289*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="cb1" SelectionChanged="ComboBox_SelectionChanged" HorizontalAlignment="Center" VerticalAlignment="Center"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" FontSize="24" FontWeight="Bold" Margin="0,41,0,14" Width="47" SelectedIndex="0" Height="35">
+            <ListBoxItem Content="+"/>
+            <ListBoxItem Content="-"/>
+            <ListBoxItem Content="*"/>
+            <ListBoxItem Content="/"/>
+
+        </ComboBox>
+        <TextBox x:Name="txBx1" 
+                 HorizontalAlignment="Center" 
+                 Height="36" TextWrapping="Wrap" 
+                 VerticalAlignment="Center" Width="200" 
+                 VerticalContentAlignment="Center" 
+                 HorizontalContentAlignment="Center" 
+                 RenderTransformOrigin="0.5,0.569" 
+                 Margin="10,40,23,14" 
+                 KeyDown="TxBx1_KeyDown" 
+                 Text="введите дробное число ..." GotFocus="TxBx1_GotFocus" LostFocus="TxBx1_LostFocus" TextChanged="TxBx1_TextChanged">
+            <TextBox.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.InactiveCaptionColorKey}}"/>
+            </TextBox.Foreground>
+            <TextBox.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="txBx2" HorizontalAlignment="Center" Height="36" TextWrapping="Wrap" Width="200" RenderTransformOrigin="0.5,0.569" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10,40,23,14" TextChanged="TxBx2_TextChanged" KeyDown="TxBx2_KeyDown" Text="введите дробное число ..." GotFocus="TxBx2_GotFocus" LostFocus="TxBx2_LostFocus" VerticalAlignment="Center">
+            <TextBox.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.InactiveCaptionColorKey}}"/>
+            </TextBox.Foreground>
+            <TextBox.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
+            </TextBox.Background>
+        </TextBox>
+        <Label Content="=" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontWeight="Bold" Margin="0,41,232,14" Width="47" Height="35" Grid.Column="3" RenderTransformOrigin="0.468,0.5" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="lblResult" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" Margin="10.412,41,10,13" Width="212" Height="36" Grid.Column="4" RenderTransformOrigin="0.468,0.417" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <Button x:Name="btnCalc" Content="Вычислить" Grid.Column="4" HorizontalAlignment="Center" Margin="0.412,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="75" IsEnabled="False" Click="BtnCalc_Click"/>
+        <Canvas x:Name="Cnvs" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="330" VerticalAlignment="Top" Width="560" Grid.RowSpan="2" Margin="1,0,0,0" Grid.Row="1"/>
+
+    </Grid>
+</Window>

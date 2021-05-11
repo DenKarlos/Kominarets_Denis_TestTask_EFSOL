@@ -1,0 +1,15 @@
+D:\Test_C_Sharp\Test_task_1\Test_task_1\bin\Debug\Test_task_1.exe.config
+D:\Test_C_Sharp\Test_task_1\Test_task_1\bin\Debug\Test_task_1.exe
+D:\Test_C_Sharp\Test_task_1\Test_task_1\bin\Debug\Test_task_1.pdb
+D:\Test_C_Sharp\Test_task_1\Test_task_1\obj\Debug\Test_task_1.csprojAssemblyReference.cache
+D:\Test_C_Sharp\Test_task_1\Test_task_1\obj\Debug\MainWindow.g.cs
+D:\Test_C_Sharp\Test_task_1\Test_task_1\obj\Debug\App.g.cs
+D:\Test_C_Sharp\Test_task_1\Test_task_1\obj\Debug\Test_task_1_MarkupCompile.cache
+D:\Test_C_Sharp\Test_task_1\Test_task_1\obj\Debug\Test_task_1_MarkupCompile.lref
+D:\Test_C_Sharp\Test_task_1\Test_task_1\obj\Debug\MainWindow.baml
+D:\Test_C_Sharp\Test_task_1\Test_task_1\obj\Debug\Test_task_1.g.resources
+D:\Test_C_Sharp\Test_task_1\Test_task_1\obj\Debug\Test_task_1.Properties.Resources.resources
+D:\Test_C_Sharp\Test_task_1\Test_task_1\obj\Debug\Test_task_1.csproj.GenerateResource.cache
+D:\Test_C_Sharp\Test_task_1\Test_task_1\obj\Debug\Test_task_1.csproj.CoreCompileInputs.cache
+D:\Test_C_Sharp\Test_task_1\Test_task_1\obj\Debug\Test_task_1.exe
+D:\Test_C_Sharp\Test_task_1\Test_task_1\obj\Debug\Test_task_1.pdb
